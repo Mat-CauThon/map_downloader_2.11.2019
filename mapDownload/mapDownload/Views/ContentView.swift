@@ -42,17 +42,18 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
-                Button(action: {
-                    for item in self.worldRegions.regions {
-                        for row in item.subRegions {
-                            print(row.subRegions.filter({ (reg) -> Bool in
-                                return reg.onDevice
-                            }).count)
-                        }
-                    }
-                }) {
-                    Text("Hello")
-                }
+//                 кнопка для тестов
+//                 Button(action: {
+//                     for item in self.worldRegions.regions {
+//                         for row in item.subRegions {
+//                             print(row.subRegions.filter({ (reg) -> Bool in
+//                                 return reg.onDevice
+//                             }).count)
+//                         }
+//                     }
+//                 }) {
+//                     Text("Hello")
+//                 }
 //                верхняя часть мэйн вьюхи, с ProgressBar и свободным местом
                 VStack {
                     HStack {

@@ -11,6 +11,8 @@
 		A44E1B0B236B6C1C00B5E6BD /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E1B0A236B6C1C00B5E6BD /* ProgressBar.swift */; };
 		A44E1B0D236B724300B5E6BD /* DiskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E1B0C236B724300B5E6BD /* DiskStatus.swift */; };
 		A451FE8C236CC92000236756 /* CountryRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A451FE8B236CC92000236756 /* CountryRegion.swift */; };
+		A4B2A06523721870009172DC /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2A06423721870009172DC /* Parser.swift */; };
+		A4B2A067237218D3009172DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2A066237218D3009172DC /* Extensions.swift */; };
 		A4C8DE4F2368CB530058587E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8DE4E2368CB530058587E /* AppDelegate.swift */; };
 		A4C8DE512368CB530058587E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8DE502368CB530058587E /* SceneDelegate.swift */; };
 		A4C8DE542368CB530058587E /* mapDownload.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4C8DE522368CB530058587E /* mapDownload.xcdatamodeld */; };
@@ -19,7 +21,7 @@
 		A4C8DE5B2368CB580058587E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C8DE5A2368CB580058587E /* Preview Assets.xcassets */; };
 		A4C8DE5E2368CB580058587E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C8DE5C2368CB580058587E /* LaunchScreen.storyboard */; };
 		A4C8DE662368CBF00058587E /* regions.xml in Resources */ = {isa = PBXBuildFile; fileRef = A4C8DE652368CBF00058587E /* regions.xml */; };
-		A4C8DE682368CD230058587E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8DE672368CD230058587E /* Data.swift */; };
+		A4C8DE682368CD230058587E /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8DE672368CD230058587E /* Region.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		A44E1B0A236B6C1C00B5E6BD /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		A44E1B0C236B724300B5E6BD /* DiskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStatus.swift; sourceTree = "<group>"; };
 		A451FE8B236CC92000236756 /* CountryRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRegion.swift; sourceTree = "<group>"; };
+		A4B2A06423721870009172DC /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		A4B2A066237218D3009172DC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A4C8DE4B2368CB530058587E /* mapDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C8DE4E2368CB530058587E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C8DE502368CB530058587E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +41,7 @@
 		A4C8DE5D2368CB580058587E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4C8DE5F2368CB580058587E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C8DE652368CBF00058587E /* regions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = regions.xml; sourceTree = "<group>"; };
-		A4C8DE672368CD230058587E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A4C8DE672368CD230058587E /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +65,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A4B6622E236DF43A00430F1B /* Data & Status */ = {
+		A4B6622E236DF43A00430F1B /* Custom info class */ = {
 			isa = PBXGroup;
 			children = (
-				A4C8DE672368CD230058587E /* Data.swift */,
+				A4C8DE672368CD230058587E /* Region.swift */,
+				A4B2A066237218D3009172DC /* Extensions.swift */,
+				A4B2A06423721870009172DC /* Parser.swift */,
 				A44E1B0C236B724300B5E6BD /* DiskStatus.swift */,
 				A44E1B0A236B6C1C00B5E6BD /* ProgressBar.swift */,
 			);
-			path = "Data & Status";
+			path = "Custom info class";
 			sourceTree = "<group>";
 		};
 		A4C8DE422368CB530058587E = {
@@ -92,7 +98,7 @@
 			children = (
 				A4C8DE4E2368CB530058587E /* AppDelegate.swift */,
 				A4C8DE502368CB530058587E /* SceneDelegate.swift */,
-				A4B6622E236DF43A00430F1B /* Data & Status */,
+				A4B6622E236DF43A00430F1B /* Custom info class */,
 				A4493F6D236E340100564CC7 /* Views */,
 				A4C8DE572368CB580058587E /* Assets.xcassets */,
 				A4C8DE5C2368CB580058587E /* LaunchScreen.storyboard */,
@@ -186,12 +192,14 @@
 			files = (
 				A4C8DE542368CB530058587E /* mapDownload.xcdatamodeld in Sources */,
 				A446C062236E090200DA28EE /* RegionRow.swift in Sources */,
-				A4C8DE682368CD230058587E /* Data.swift in Sources */,
+				A4B2A06523721870009172DC /* Parser.swift in Sources */,
+				A4C8DE682368CD230058587E /* Region.swift in Sources */,
 				A4C8DE4F2368CB530058587E /* AppDelegate.swift in Sources */,
 				A4C8DE562368CB530058587E /* ContentView.swift in Sources */,
 				A44E1B0B236B6C1C00B5E6BD /* ProgressBar.swift in Sources */,
 				A4C8DE512368CB530058587E /* SceneDelegate.swift in Sources */,
 				A451FE8C236CC92000236756 /* CountryRegion.swift in Sources */,
+				A4B2A067237218D3009172DC /* Extensions.swift in Sources */,
 				A44E1B0D236B724300B5E6BD /* DiskStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
